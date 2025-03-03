@@ -10,13 +10,13 @@ type Variant = "solid" | "outlined";
 
 type Props = ComponentProps<"select"> & {
   variant?: Variant;
-  options: SelectOption[];
+  options: SelectOption[];  
 };
 
-const Select = ({ variant = "solid", options }: Props): ReactNode => {
+const Select = ({ variant = "solid", options , ...otherProps }: Props): ReactNode => {
   return (
     <div className={clsx(styles.select, styles[variant])}>
-      <select name="category" id="category">
+      <select {...otherProps} name="category" id="category">
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}

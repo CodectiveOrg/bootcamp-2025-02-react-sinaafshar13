@@ -3,12 +3,10 @@
 
   bottom: 1rem;
   right: 1rem;
-  /* inset-inline-end: 1rem;   
-  inset-block-end: 1rem; */
-  dialog {
-inline-size: 100%;
-max-inline-size: 30rem;
 
+  dialog {
+    inline-size: 100%;
+    max-inline-size: 30rem;
 
     border-radius: 0.5rem;
 
@@ -26,12 +24,12 @@ max-inline-size: 30rem;
 
       padding: 1rem;
 
-      h3{
-        color:var(--color-primary);
+      h3 {
+        color: var(--color-primary);
         text-align: center;
 
         font-size: 1.5rem;
-        font-weight:700;
+        font-weight: 700;
       }
       .actions {
         display: flex;
