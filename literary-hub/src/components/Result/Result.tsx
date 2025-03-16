@@ -60,6 +60,7 @@ const Result = (): ReactNode => {
             </li>
           ))}
         </ul>
+
       </div>
       <MediaModal ref={modalRef} editingMedia={editingMedia ?? undefined} />
     </>
